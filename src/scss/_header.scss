@@ -39,6 +39,7 @@
     padding: 40px 30px;
     display: flex;
     align-items: center;
+    justify-content: center;
     transition: 0.3s;
     // z-index: 11;
     &::before {
@@ -195,6 +196,12 @@
 }
 
 @media (max-width: 425px) {
+    .header__nav {
+        padding: 30px 30px;
+        &::before {
+            height: 100px;
+        }
+    }
     .header__list {
         width: 100%;
         padding: 30% 10% 100% 0;
