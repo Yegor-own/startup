@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('.header__burger').click(function() {
+	$('.header__burger, .header__link').click(function() {
 		$('.header__burger,.header__list').toggleClass('active');
 		$('body').toggleClass('lock');
 	});
@@ -28,13 +28,10 @@ $(document).ready(function() {
 		slidesToShow: slides,
 		infinite: false,
 	});
-
-	function ibg() {
-		$.each($('.ibg'), function(index, val) {
-			if($(this).find('img').length>0){
-				$(this).css('background-image','url("'+$(this).find('img').attr('src')+'")');
-			}
-		});
-	}
-	ibg();
+	$('.blog-slider__body').slick({
+		arrows: false,
+		dots: true,
+		slidesToShow: 1,
+		infinite: true,
+	});
 });
