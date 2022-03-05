@@ -1180,6 +1180,193 @@ h6 {
   padding: 0 30px;
 }
 
+.contact__body {
+  padding: 100px 0;
+}
+
+.contact__head {
+  padding: 0 20px;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-contact {
+  padding: 0 20px;
+}
+
+.form-contact__contact {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-right: 20px;
+}
+
+.form-contact__item {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-contact__item picture {
+  width: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-right: 25px;
+  margin-top: 5px;
+}
+
+.form-contact__item picture img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+.form-contact__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Montserrat-Regular;
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: center;
+  color: #555;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.form-contact__subtitle {
+  font-family: RobotoSlab-Regular;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.67;
+  text-align: left;
+  color: #555;
+}
+
+.form-contact__form {
+  max-width: 730px;
+}
+
+.form-contact__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form-contact__group input {
+  margin-bottom: 20px;
+  height: 44px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 350px;
+          flex: 0 1 350px;
+  padding-left: 17px;
+  border: solid 1px #555;
+}
+
+.form-contact__group input:focus {
+  -webkit-box-shadow: 0 0 3px #999;
+          box-shadow: 0 0 3px #999;
+  border: solid 1px #c0301c;
+}
+
+.form-contact__textarea {
+  margin-bottom: 20px;
+}
+
+.form-contact__textarea textarea {
+  width: 100%;
+  padding: 17px;
+  border: solid 1px #555;
+}
+
+.form-contact__textarea textarea:focus {
+  -webkit-box-shadow: 0 0 3px #999;
+          box-shadow: 0 0 3px #999;
+  border: solid 1px #c0301c;
+}
+
+.form-contact__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-contact__button button {
+  background: none;
+  width: 170px;
+  height: 44px;
+  border: solid 1px #555;
+  font-family: RobotoSlab-Regular;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: #555;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  margin-right: 40px;
+}
+
+.form-contact__button button:hover {
+  -webkit-box-shadow: 0 0 3px #999;
+          box-shadow: 0 0 3px #999;
+  border: solid 1px #c0301c;
+  color: #c0301c;
+}
+
+.form-contact__button span {
+  font-family: RobotoSlab-Regular;
+  font-size: 12px;
+  line-height: 1.67;
+  text-align: left;
+}
+
 @media (max-width: 768px) {
   .header__nav {
     display: -webkit-box;
@@ -1535,6 +1722,20 @@ h6 {
   .blog-slider__clients picture {
     margin: 10px;
   }
+
+  .form-contact {
+    display: block;
+  }
+
+  .form-contact__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -1624,5 +1825,43 @@ h6 {
 
   .blog-item__subtitle {
     text-align: center;
+  }
+
+  .form-contact__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0px;
+  }
+
+  .form-contact__item {
+    width: 100%;
+  }
+
+  .form-contact__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .form-contact__button button {
+    margin-bottom: 20px;
   }
 }
